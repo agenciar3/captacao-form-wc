@@ -13,7 +13,7 @@ define('DB_SALES_FORM', 'ws_sales_form'); //Tabela de BKP do Formulário
 
 5. O arquivo page-obrigado.php tem os códigos para recebimento dos dados, tratamento dos mesmos, envio com função nativa do WC, captação das informações de URL e Campanha e gravação no banco de dados.
 
-OBSERVAÇÕES
+__OBSERVAÇÕES__
 Caso queira, pode descartar o arquivo header.php e toda a parte de sessão e cookie do page-obrigado.php e usar apenas a parte para gravar dados no banco.
 
 Caso queira alterar, retirar ou acrescentar algum campo não esqueça de acrescentar o mesmo no DB e no arquivo page-obrigado.php
