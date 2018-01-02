@@ -13,6 +13,12 @@ define('DB_SALES_FORM', 'ws_sales_form'); //Tabela de BKP do Formulário
 
 5. O arquivo page-obrigado.php tem os códigos para recebimento dos dados, tratamento dos mesmos, envio com função nativa do WC, captação das informações de URL e Campanha e gravação no banco de dados.
 
+6. Dentro da pasta admin/siswc inserir a pasta form.
+
+7. Dentro da pasta admin/siswc arquivo wc_menu.php inserir chamada para os formulários na Dashboard:
+
+<li class="dashboard_nav_menu_li <?= strstr($getViewInput, 'form/') ? 'dashboard_nav_menu_active' : ''; ?>"><a class="icon-list" title="Backup Formulário" href="dashboard.php?wc=form/home">Formulários</a></li>
+
 __OBSERVAÇÕES__
 Caso queira, pode descartar o arquivo header.php e toda a parte de sessão e cookie do page-obrigado.php e usar apenas a parte para gravar dados no banco.
 
